@@ -10,11 +10,10 @@
         android:id="@+id/btn_save"
         android:layout_width="309dp"
         android:layout_height="47dp"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="184dp"
         android:text="Save Student"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -22,14 +21,12 @@
         android:id="@+id/btn_search"
         android:layout_width="309dp"
         android:layout_height="47dp"
+        android:layout_marginTop="20dp"
         android:text="Search Students"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_git"
-        app:layout_constraintEnd_toEndOf="@+id/btn_save"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btn_save"
-        app:layout_constraintTop_toBottomOf="@+id/btn_save"
-        app:layout_constraintVertical_bias="0.473" />
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_save_dailytasks"
+        app:layout_constraintStart_toStartOf="@+id/btn_save_dailytasks"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save_dailytasks" />
 
     <TextView
         android:id="@+id/textView"
@@ -48,12 +45,25 @@
         android:id="@+id/btn_git"
         android:layout_width="309dp"
         android:layout_height="47dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="200dp"
         android:text="Git Repository"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btn_search"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="@+id/btn_search" />
+        app:layout_constraintStart_toStartOf="@+id/btn_search"
+        app:layout_constraintTop_toBottomOf="@+id/btn_search" />
+
+    <Button
+        android:id="@+id/btn_save_dailytasks"
+        android:layout_width="309dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:text="Save Daily Tasks"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_save"
+        app:layout_constraintStart_toStartOf="@+id/btn_save"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
