@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaveDailyTasks">
+    <TextView
+        android:id="@+id/tv_dt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="56dp"
+        android:text="Daily Tasks"
+        android:textAlignment="center"
+        android:textColor="#ff6750a4"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_save_dt"
+        android:layout_width="110dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="188dp"
+        android:text="Save"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout_dt"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout_dt" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_dt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dt">
+
+        <EditText
+            android:id="@+id/et_sabaq"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="Sabaq"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_sabaqi"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="Sabaqi"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_manzil"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="Manzil"
+            android:inputType="text" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

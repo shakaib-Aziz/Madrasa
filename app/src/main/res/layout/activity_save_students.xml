@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaveStudentActivity">
+
+    <Button
+        android:id="@+id/btn_save_st"
+        android:layout_width="110dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="136dp"
+        android:text="Save"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout_st"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout_st" />
+
+    <TextView
+        android:id="@+id/tv_st"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:text="Student Record"
+        android:textAlignment="center"
+        android:textColor="#ff6750a4"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btn_save_st"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_st">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:hint="Age"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/et_class"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:hint="Class" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
