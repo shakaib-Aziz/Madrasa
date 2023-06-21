@@ -55,9 +55,9 @@ public class DBHelper extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(COLUMN_NAME, student.getName());
         values.put(COLUMN_Age, student.getAge());
-        values.put(COLUMN_Class, student.getClas());
+        values.put(COLUMN_Class, student.getS_Class());
         values.put(COLUMN_Sabaq, student.getSabaq());
-        values.put(COLUMN_Sabaqi, student.getSabqi());
+        values.put(COLUMN_Sabaqi, student.getSabaqi());
         values.put(COLUMN_Manzil, student.getManzil());
 
 

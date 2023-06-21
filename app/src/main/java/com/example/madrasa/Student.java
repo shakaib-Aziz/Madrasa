@@ -3,14 +3,14 @@ package com.example.madrasa;
 public class Student {
     private String name;
     private String age;
-    private String clas;
+    private String s_class;
     private String sabaq;
     private String sabqi;
     private String manzil;
-    public Student(String name, String age, String clas, String sabaq, String sabqi, String manzil) {
+    public Student(String name, String age, String s_class, String sabaq, String sabqi, String manzil) {
         this.name = name;
         this.age = age;
-        this.clas = clas;
+        this.s_class = s_class;
         this.sabaq = sabaq;
         this.sabqi = sabqi;
         this.manzil = manzil;
@@ -20,53 +20,41 @@ public class Student {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+
 
     public String getAge() {
         return age;
     }
 
-    public void setAge(String age) {
-        this.age = age;
+
+
+    public String getS_Class() {
+        return s_class;
     }
 
-    public String getClas() {
-        return clas;
-    }
 
-    public void setClas(String clas) {
-        this.clas = clas;
-    }
 
     public String getSabaq() {
         return sabaq;
     }
 
-    public void setSabaq(String sabaq) {
-        this.sabaq = sabaq;
-    }
 
-    public String getSabqi() {
+
+    public String getSabaqi() {
         return sabqi;
     }
 
-    public void setSabqi(String sabqi) {
-        this.sabqi = sabqi;
-    }
+
 
     public String getManzil() {
         return manzil;
     }
 
-    public void setManzil(String manzil) {
-        this.manzil = manzil;
-    }
+
 
     @Override
     public String toString() {
-        return "Student [name=" + name + ", age=" + age + ", Class=" + clas + ", sabaq=" + sabaq + ", sabaqi=" + sabqi + ", manzil=" + manzil +"]";
+        return "Student [name=" + name + ", age=" + age + ", Class=" + s_class + ", sabaq=" + sabaq + ", sabaqi=" + sabqi + ", manzil=" + manzil +"]";
     }
 
 }
