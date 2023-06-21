@@ -16,38 +16,34 @@ public class MainActivity extends AppCompatActivity {
     //  private DBHelper dbHelper;
 
     private Intent intent;
-    Button btnSave, btnDailyTasks, btnSearch, btnGit;
+    Button btnSave, btnSearch, btnGit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //    dbHelper = new DBHelper(this);
-
         btnSave = findViewById(R.id.btn_save);
-        btnDailyTasks = findViewById(R.id.btn_save_dailytasks);
         btnSearch = findViewById(R.id.btn_search);
         btnGit = findViewById(R.id.btn_git);
-
     }
 
     public void menu(View v) {
         int id = v.getId();
         if (id == R.id.btn_save) {
-             intent=new Intent(MainActivity.this,SaveStudentActivity.class);
+            intent=new Intent(MainActivity.this,SaveStudentActivity.class);
             startActivity(intent);
-        } else if (id == R.id.btn_save_dailytasks) {
-             intent=new Intent(MainActivity.this,SaveDailyTasks.class);
+        } else if (id==R.id.btn_displayDB) {
+            intent=new Intent(MainActivity.this,DisplayDB.class);
             startActivity(intent);
+
         } else if (id == R.id.btn_search) {
-             intent=new Intent(MainActivity.this,SearchStudentData.class);
+            intent=new Intent(MainActivity.this,SearchStudentData.class);
             startActivity(intent);
         } else {
             String githubUrl = "https://github.com/S-H-A-B-B-Y/Madrasa";
-             intent = new Intent(Intent.ACTION_VIEW, Uri.parse(githubUrl));
+            intent = new Intent(Intent.ACTION_VIEW, Uri.parse(githubUrl));
             startActivity(intent);
         }
-        setContentView(R.layout.activity_main);
     }
 }

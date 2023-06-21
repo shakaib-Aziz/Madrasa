@@ -19,7 +19,7 @@ public class MyAdapter extends RecyclerView.Adapter<myViewHolder> {
     }
 
     public myViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new myViewHolder(LayoutInflater.from(context).inflate(R.layout.item_view,parent,false));
+        return new myViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_view,parent,false));
     }
 
 

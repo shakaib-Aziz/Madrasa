@@ -13,10 +13,10 @@
         android:theme="@style/Theme.Madrasa"
         tools:targetApi="31">
         <activity
-            android:name=".SearchStudentData"
+            android:name=".DisplayDB"
             android:exported="false" />
         <activity
-            android:name=".SaveDailyTasks"
+            android:name=".SearchStudentData"
             android:exported="false" />
         <activity
             android:name=".SaveStudentActivity"

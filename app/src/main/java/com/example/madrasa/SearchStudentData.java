@@ -15,6 +15,7 @@ public class SearchStudentData extends AppCompatActivity {
 
     RecyclerView recyclerView;
     RecyclerView.Adapter adapter;
+    LinearLayoutManager linearLayoutManager;
     List<Student> students;
     DBHelper db;
     TextView name,age;
@@ -25,7 +26,6 @@ public class SearchStudentData extends AppCompatActivity {
         setContentView(R.layout.activity_search_student_data);
 
         recyclerView=findViewById(R.id.recyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         name=findViewById(R.id.et_name_search);
         age=findViewById(R.id.et_age_search);
@@ -36,10 +36,14 @@ public class SearchStudentData extends AppCompatActivity {
         btn_searchDB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                students=(List<Student>) db.searchStudent(name.getText().toString(), Integer.parseInt(age.getText().toString()));
-                adapter=new MyAdapter(getApplicationContext(),students);
+                students=(List<Student>) db.searchStudent(name.getText().toString());
+
+                recyclerView.setHasFixedSize(true);
+                linearLayoutManager = new LinearLayoutManager(SearchStudentData.this);
+                recyclerView.setLayoutManager(linearLayoutManager);
+
+                adapter = new MyAdapter(getApplicationContext(),students);
                 recyclerView.setAdapter(adapter);
-                adapter.notifyDataSetChanged();
             }
         });
 

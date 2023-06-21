@@ -12,7 +12,7 @@
         android:layout_height="47dp"
         android:layout_marginTop="184dp"
         android:onClick="menu"
-        android:text="Save Student"
+        android:text="Add Student"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,11 +24,11 @@
         android:layout_height="47dp"
         android:layout_marginTop="20dp"
         android:onClick="menu"
-        android:text="Search Students"
+        android:text="Search Student"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/btn_save_dailytasks"
-        app:layout_constraintStart_toStartOf="@+id/btn_save_dailytasks"
-        app:layout_constraintTop_toBottomOf="@+id/btn_save_dailytasks" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_save"
+        app:layout_constraintStart_toStartOf="@+id/btn_save"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save" />
 
     <TextView
         android:id="@+id/textView"
@@ -48,26 +48,24 @@
         android:layout_width="309dp"
         android:layout_height="47dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="200dp"
         android:onClick="menu"
         android:text="Git Repository"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btn_search"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="@+id/btn_search"
-        app:layout_constraintTop_toBottomOf="@+id/btn_search" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_displayDB"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_displayDB"
+        app:layout_constraintTop_toBottomOf="@+id/btn_displayDB" />
 
     <Button
-        android:id="@+id/btn_save_dailytasks"
+        android:id="@+id/btn_displayDB"
         android:layout_width="309dp"
         android:layout_height="47dp"
         android:layout_marginTop="20dp"
         android:onClick="menu"
-        android:text="Save Daily Tasks"
+        android:text="Display All Records"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/btn_save"
-        app:layout_constraintStart_toStartOf="@+id/btn_save"
-        app:layout_constraintTop_toBottomOf="@+id/btn_save" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_search"
+        app:layout_constraintStart_toStartOf="@+id/btn_search"
+        app:layout_constraintTop_toBottomOf="@+id/btn_search" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
