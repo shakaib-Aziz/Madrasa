@@ -42,7 +42,6 @@ public class DBHelper extends SQLiteOpenHelper {
                 + ")";
         db.execSQL(sql);
     }
-    //                +"PRIMARY KEY (" + COLUMN_NAME + ", " + COLUMN_Age + ")"
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -97,8 +96,6 @@ public class DBHelper extends SQLiteOpenHelper {
         return students;
     }
 
-
-
     public List<Student> showAllStudents() {
 
         List<Student> students = new ArrayList<>();
@@ -107,8 +104,6 @@ public class DBHelper extends SQLiteOpenHelper {
 
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(sql, null);
-
-
 
         if (cursor.moveToFirst()) {
             do {

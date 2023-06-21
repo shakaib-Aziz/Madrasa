@@ -46,6 +46,13 @@ public class SaveStudentActivity extends AppCompatActivity {
                 student=new Student(name,age,s_class,sabaq,sabaqi,manzil);
                 dataBase.addStudent(student);
                 Toast.makeText(SaveStudentActivity.this,"Student with daily task recorded successfully!",Toast.LENGTH_LONG).show();
+
+                etname.setText("");
+                etage.setText("");
+                etclass.setText("");
+                etsabaq.setText("");
+                etsabaqi.setText("");
+                etmanzil.setText("");
             }
         });
 

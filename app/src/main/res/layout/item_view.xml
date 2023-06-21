@@ -1,43 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/tv_name_rv"
-        android:layout_width="match_parent"
+        android:id="@+id/tv_nameh_rv"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:textSize="18sp"
+        android:text="Name: "
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/tv_age_rv"
-        android:layout_width="match_parent"
+        android:id="@+id/tv_name_rv"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv_nameh_rv"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv_ageh_rv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nameh_rv"
+        android:text="Age: "
+        android:textStyle="bold"
         android:textSize="18sp" />
 
+    <TextView
+        android:id="@+id/tv_age_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_rv"
+        android:layout_toEndOf="@id/tv_ageh_rv"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_classh_rv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ageh_rv"
+        android:text="Class: "
+        android:textStyle="bold"
+        android:textSize="18sp" />
     <TextView
         android:id="@+id/tv_class_rv"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tv_age_rv"
+        android:layout_toEndOf="@id/tv_classh_rv"
         android:textSize="18sp" />
 
+    <TextView
+        android:id="@+id/tv_sabaqh_rv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_classh_rv"
+        android:text="Sabaq: "
+        android:textStyle="bold"
+        android:textSize="18sp" />
     <TextView
         android:id="@+id/tv_sabaq_rv"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tv_class_rv"
+        android:layout_toEndOf="@id/tv_sabaqh_rv"
         android:textSize="18sp" />
 
+    <TextView
+        android:id="@+id/tv_sabaqih_rv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_sabaqh_rv"
+        android:text="Sabaqi: "
+        android:textStyle="bold"
+        android:textSize="18sp" />
     <TextView
         android:id="@+id/tv_sabaqi_rv"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tv_sabaq_rv"
+        android:layout_toEndOf="@id/tv_sabaqih_rv"
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/tv_manzil_rv"
-        android:layout_width="match_parent"
+        android:id="@+id/tv_manzilh_rv"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tv_sabaqih_rv"
+        android:text="Manzil: "
+        android:textStyle="bold"
         android:textSize="18sp" />
-</LinearLayout>
+    <TextView
+        android:id="@+id/tv_manzil_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_sabaqi_rv"
+        android:layout_toEndOf="@id/tv_manzilh_rv"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/tv_formatting_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_manzil_rv"
+        android:layout_toEndOf="@id/tv_manzilh_rv"
+        android:text="-------------------------------"
+        android:textSize="18sp" />
+</RelativeLayout>

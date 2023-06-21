@@ -20,17 +20,16 @@ public class DisplayDB extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_db);
 
-        recyclerView=findViewById(R.id.recyclerView_DB);
         db=new DBHelper(this);
         students=(List<Student>) db.showAllStudents();
 
+        recyclerView=findViewById(R.id.recyclerView_DB);
         recyclerView.setHasFixedSize(true);
         linearLayoutManager = new LinearLayoutManager(DisplayDB.this);
         recyclerView.setLayoutManager(linearLayoutManager);
 
         adapter = new MyAdapter(getApplicationContext(),students);
         recyclerView.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
 
     }
 }

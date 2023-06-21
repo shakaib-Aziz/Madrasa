@@ -18,7 +18,7 @@ public class SearchStudentData extends AppCompatActivity {
     LinearLayoutManager linearLayoutManager;
     List<Student> students;
     DBHelper db;
-    TextView name,age;
+    TextView name;
     Button btn_searchDB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,6 @@ public class SearchStudentData extends AppCompatActivity {
         recyclerView=findViewById(R.id.recyclerView);
 
         name=findViewById(R.id.et_name_search);
-        age=findViewById(R.id.et_age_search);
         btn_searchDB=findViewById(R.id.btn_searchDB);
 
         db=new DBHelper(this);
